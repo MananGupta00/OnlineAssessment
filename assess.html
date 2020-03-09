@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="Stylesheet" href="./Assessment.css">
+</head>
+
+
+<body>
+  <div id="bigChange">
+  <!--header starts-->
+  <h1>
+    <b>Online Assessment</b></h1>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="./sect1.html">Section 1</a></li>
+    <li><a href="./sect2.html" class="currentsection">Section 2</a></li>
+    <li><a href="./sect3.html">Section 3</a></li>
+    <li style="float:right"><a href="#about">Feedback</a></li>
+  </ul>
+  <h1 id="CA">
+    <b>Coding Assessment</b></h1>
+  <div id="big">
+    <!--header ends-->
+
+
+    <!--this is a big contianer to divide page into left and right sections-->
+    <!--spanning left navigation bar here-->
+    <div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; List</span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#p1">Problems:-</a><br>
+      <a href="#p1">Problem 1</a>
+      <a href="#p2">Problem 2</a>
+      <a href="#">Problem 3</a>
+    </div>
+    <!--left navigation ends-->
+
+    
+      <!--code tab starts here-->
+      <div class="Box">
+        <h2 class="Heading" id="p1">Problem 1</h2>
+        <p id="problemStatement">
+        You are given N boxes that are kept in a straight line.You are also given M colors such that (M
+        <=N).You cannot change the position of boxes. Determine the number of ways to color the boxes such that
+          if you select any M consecutive boxes then the color of each box is unique.
+          Since the number could be large,print the answer .</p>
+          <p id="problemData">
+            <b>MODULO</b> 10^9+7. <br/>
+          <b>Input Format:</b> <br/>
+          Two space-seperated integers N and M <br/>
+          <b>Output Format:</b> <br/>
+          For the provided inputs, print the required answer. <br/>
+          <b>Constraints:</b> <br/>
+          1<=M<=N<=10^6 </div><br/>
+          </p>
+            <div class="list">
+              <div class="listhead">Select Language:-></div>
+              <select class="codelist" name="codelist1" onchange="handleChange(this)" id="cl1">
+                <option value="1">PHP</option>
+                <option value="2">Java</option>
+                <option value="3">C</option>
+                <option value="4">C++</option>
+                <option value="5">Python</option>
+                <option value="6">Go</option>
+                <option value="7">Ruby</option>
+                <option value="8">JavaScript</option>
+                <option value="9">C#</option>
+              </select>
+            </div><br>
+            <textarea class="inbox" id="tb1" oninput="handleChange(this)">Enter your code here............!!</textarea><br/>
+            <textbox class="textbox"> OUTPUT</textbox>
+            <input type="text" placeholder="Enter cases Output here" class="Inout" id="out1" oninput="handleChange(this)"><br>
+            <button class="button" type="submit">Submit</button>            
+      <!--code tab ends-->
+    </div>
+    
+
+    <!--footer starts here-->
+    <div class="footer">
+      <p1> Meerut Institute of Engineering & Technology, Meerut</p1>
+      <p>Designed by:Hardik Sharma(CXI Club)</p>
+    </div>
+    <!--footer ends-->
+
+    
+    <script type="text/javascript" src="cookie.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="Ass.js"></script>
+
+</body>
+</html>

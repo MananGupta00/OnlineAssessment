@@ -1,0 +1,146 @@
+* {
+  font-family: Comic sans MS;
+}
+h1 {
+ font-style: Verdana;
+ text-align: center;
+ font-size: 30px;
+ background-image: linear-gradient(to bottom, #edffd6, #829cd0 );
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #232f34;
+}
+
+li {
+  float: left;
+}
+
+
+.codelist {
+  margin-left: 5%;
+  font-size: 18px;
+}
+.list{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3700b3;
+}
+ul:nth-child(3):hover {
+background-color: #3700b3;
+}
+.currentsection {
+  background-color: #3700b3;
+}
+li {
+  border-right: 1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+
+.inout {
+  width:400px;
+  height: 50px;
+}
+.Heading {
+  font-style: Verdana;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 20px;  
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.box {
+  
+  border:2px solid black;
+   background-color: #FFC0CB;
+}
+.inbox {
+  /*margin-top: 125px; */
+  text-align: left;
+  width: 70%;
+  margin-left: 5%;
+  height: 500px;
+  border:1px solid black;
+}
+.button {
+  display: flex;
+  align-content: stretch;
+  background-color: #d8d9db;
+    color: black;
+    height: 45px;
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: inherit;
+    cursor: pointer;
+    text-align: center;
+}
+.button:hover {
+	background-color:#95A5A6;
+}
+.button:active {
+	background-color:#34495E;
+}
+.footer {
+  background-color: #232f34;
+  text-align: left;
+  padding: 10px;
+ margin-top:280px;
+ color :white;
+}
+
+.bigChange{
+    width: 70%;
+    margin-left: 50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
