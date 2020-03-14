@@ -8,21 +8,21 @@ var out1 = document.getElementById("out1");
 function getCookieVals() {
   console.log("getting cookies");
 
-  var Lang1 = accessCookie("P" + Qindex + "L1");
+  var Lang1 = accessCookie("P" + Qindex + "cl1");
   var tex1 = accessCookie("P" + Qindex + "tb1");
-  var ou1 = accessCookie("P" + Qindex + "o1");
+  var ou1 = accessCookie("P" + Qindex + "out1");
 
   console.log("Text1 = " + tex1);
   console.log("Output1 = " + ou1);
 
   select1.selectedIndex = Lang1;
   text1.innerText = tex1;
-  out1.innerText = ou1;
+  out1.value = ou1;
 }
 
 function handleChange(ele) {
-  createCookie("P" + Qindex + ele, ele.value, 0.5);
-  console.log("P" + Qindex + ele + " = " + ele.value);
+  createCookie("P" + Qindex + ele.id, ele.value, 0.5);
+  console.log("P" + Qindex + ele.id + " = " + ele.value);
 }
 
 getCookieVals();
